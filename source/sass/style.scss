@@ -1,7 +1,12 @@
-h1 {
-  color: red;
-}
+@import "general/normalize";
+@import "general/variables";
+@import "general/fonts";
+@import "general/common";
+@import "general/mixins";
 
-.test{
-  color: green;
-}
+@import "components/container";
+@import "components/header";
+@import "components/btn";
+@import "components/logo";
+@import "components/banner";
+@import "components/head";
