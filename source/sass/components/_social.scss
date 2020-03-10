@@ -1,0 +1,42 @@
+.social {
+  @include list-reset;
+  display: flex;
+}
+
+.social__item {
+  margin-top: 53px;
+
+  & + & {
+    margin-left: 16px;
+  }
+}
+
+
+.social__link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: $tablet) {
+  .social {
+    margin-right: 14px;
+  }
+
+  .social__item {
+    margin-top: 0;
+  }
+}
+/* Mobile */
+@media (max-width: $mobile) {
+  .social {
+    margin-right: 0;
+  }
+}
