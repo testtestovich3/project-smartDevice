@@ -3,6 +3,7 @@
 @import "general/fonts";
 @import "general/common";
 @import "general/mixins";
+@import "general/utilities";
 
 @import "components/container";
 @import "components/header";
@@ -10,5 +11,11 @@
 @import "components/logo";
 @import "components/banner";
 @import "components/head";
+
+@import "components/company";
+@import "components/advantages";
+@import "components/info";
+
+
 @import "components/footer";
 @import "components/social";
