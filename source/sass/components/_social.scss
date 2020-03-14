@@ -3,6 +3,12 @@
   display: flex;
 }
 
+.social__icon {
+  width: 27px;
+  height: 27px;
+  background: center no-repeat transparent;
+}
+
 .social__item {
   margin-top: 53px;
 
@@ -11,6 +17,17 @@
   }
 }
 
+.social__facebook {
+  background-image: url("../img/icone-facebook.svg");
+}
+
+.social__ok {
+  background-image: url("../img/icone-ok.svg");
+}
+
+.social__vk {
+  background-image: url("../img/icone-vk.svg");
+}
 
 .social__link {
   &:hover,

@@ -1,0 +1,18 @@
+.btn-text-mobile {
+  display: none;
+}
+
+.btn-text-desktop {
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+  .btn-text-mobile {
+    display: block;
+  }
+
+  .btn-text-desktop {
+    display: none;
+  }
+}
