@@ -7,3 +7,6 @@
 .container--narrow {
   max-width: 1200px;
 }
+.content{
+  min-height: calc(100vh - 360px);
+}

@@ -1,5 +1,16 @@
 .column__social {
   width: 380px;
+
+  p{
+    display: block;
+    margin: 1em 155px 1em 0;
+    font-family: $font-PTMono;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $black-3;
+    opacity: 0.5;
+  }
 }
 
 .column__contacts h3,

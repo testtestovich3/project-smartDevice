@@ -18,6 +18,14 @@
   p:last-child {
     margin-left: auto;
   }
+  p{
+    font-family: $font-PTMono;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $black-3;
+    opacity: 0.5;
+  }
 }
 
 .footer__content {
@@ -56,23 +64,23 @@
   display: none;
 }
 
-.footer__copyright .footer__company {
-  display: block;
-  margin: 1em 155px 1em 0;
-}
+// .footer__copyright .footer__company {
+//   display: block;
+//   margin: 1em 155px 1em 0;
+// }
 
 .footer__copyright {
   border-top: $border-footer;
 }
 
-.footer__copyright-text {
-  font-family: $font-PTMono;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: normal;
-  color: $black-3;
-  opacity: 0.5;
-}
+// .footer__copyright-text {
+//   font-family: $font-PTMono;
+//   font-size: 13px;
+//   line-height: 24px;
+//   font-weight: normal;
+//   color: $black-3;
+//   opacity: 0.5;
+// }
 
 a.footer__copyright-text {
   &:hover,
