@@ -6,13 +6,15 @@
   min-height: 220px;
   padding-bottom: 15px;
   padding-left: 203px;
-  background: url("../img/year-desktop@1x.webp") left -6px top 6px no-repeat transparent;
+  // background: url("../img/year-desktop@1x.webp") left -6px top 6px no-repeat transparent;
+  background: url("../img/year.png") left -6px top 6px no-repeat transparent;
   background-size: 220px 317px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .info__container {
-    background-image: url("../img/year-desktop@2x.webp");
+    // background-image: url("../img/year-desktop@2x.webp");
+    background-image: url("../../img/year.png");
   }
 }
 
