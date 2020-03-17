@@ -99,13 +99,11 @@
     min-height: 232px;
     margin: 0 0 20px 0;
     padding-bottom: 23px;
-
-    &:nth-child(2) {
-      padding-right: 13px;
-    }
-
-    &:nth-last-child(2) {
-      margin-bottom: 20px;
-    }
+  }
+  .advantages__item--two{
+    padding-right: 13px;
+  }
+  .advantages__item--three{
+    margin-bottom: 20px;
   }
 }
