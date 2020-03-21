@@ -1,0 +1,252 @@
+.message {
+  color: $white;
+  min-height: 500px;
+  background-color: $blue;
+  background-image: url("../img/form-background.png"), url("../img/form-triangles.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 430px) center, calc(50% + 779px) 34px;
+}
+
+.message__container {
+  box-sizing: border-box;
+  max-width: 1230px;
+  padding: 90px 30px 113px 30px;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.form {
+  max-width: 570px;
+  margin-left: auto;
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  legend {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    color: $white;
+  }
+
+  span {
+    font-family: "PT Mono", "Arial", monospace;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+
+  input,
+  textarea {
+    min-width: 270px;
+    box-sizing: border-box;
+    border: none;
+    height: 50px;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 14px 5px 14px 17px;
+    color: $white;
+    resize: none;
+    margin-bottom: 40px;
+
+    &::-webkit-input-placeholder {
+      font-family: "PT Mono", "Arial", monospace;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: normal;
+      color: $white;
+    }
+
+    &::-moz-placeholder {
+      font-size: 16px;
+      color: $white;
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+      border: solid 1px $white;
+      outline: none;
+      transition: 0.2s ease;
+      padding-left: 16px;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  textarea,
+  input[type="text"] {
+    border-radius: 0;
+  }
+
+  input[id="agr"] {
+    right: 0%;
+  }
+
+  button {
+    @include button(270px,$white,$blue,$white);
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    width: 230px;
+    font-family: "PT Mono", "Arial", monospace;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: none;
+    padding-left: 32px;
+    margin-top: 9px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $white;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 0.8;
+      outline: none;
+      transition: 0.2s ease;
+    }
+  }
+}
+
+.form textarea {
+  min-width: 100%;
+  padding: 13px 20px 13px 16px;
+  height: 154px;
+  margin-bottom: 45px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    padding-left: 15px;
+    padding-top: 12px;
+  }
+}
+
+.form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 3px;
+  border-left: 1px solid $white;
+  border-bottom: 1px solid $white;
+  left: 5px;
+  top: 8px;
+  transform: translateY(-80%) rotate(-45deg);
+}
+
+@media (max-width: $tablet-width-max) {
+  .message {
+    background-image: none;
+  }
+
+  .message__container {
+    padding: 80px 28px 104px 33px;
+  }
+
+  .form {
+    max-width: 590px;
+    margin: 0 auto;
+
+    legend {
+      font-size: 32px;
+      line-height: 45px;
+      margin-bottom: 15px;
+    }
+
+    span {
+      margin-bottom: 55px;
+    }
+
+    input {
+      min-width: 278px;
+      margin-bottom: 41px;
+    }
+
+    textarea {
+      height: 159px;
+      margin-bottom: 48px;
+    }
+
+    button {
+      min-width: 280px;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .message__container {
+    padding: 15px;
+    padding-bottom: 43px;
+  }
+
+  .form__row {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .form {
+    padding-top: 14px;
+
+    legend {
+      max-width: 250px;
+      font-size: 28px;
+      line-height: 40px;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+
+    span {
+      margin-bottom: 25px;
+    }
+
+    input {
+      margin-bottom: 32px;
+    }
+
+    textarea {
+      height: 104px;
+      margin-bottom: 33px;
+    }
+
+    label {
+      margin-top: 31px;
+    }
+  }
+}
