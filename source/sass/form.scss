@@ -63,6 +63,7 @@
     color: $white;
     resize: none;
     margin-bottom: 40px;
+    overflow: hidden;
 
     &::-webkit-input-placeholder {
       font-family: "PT Mono", "Arial", monospace;
