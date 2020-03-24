@@ -68,17 +68,19 @@ if (messageLink) {
 }
 
 // закрытие модального окна по кнопке закрытия
-closeButtonLink.addEventListener('click', function (evt) {
-  closeLink = evt.target;
-  if (closeLink.parentNode.classList.contains('modal-show')) {
-    closeLink.parentNode.classList.remove('modal-show');
-    overlay.classList.remove('modal-show');
-    document.body.classList.remove('stop-scrolling');
-  }
-  if (closeLink.parentNode.classList.contains('modal-error')) {
-    closeLink.parentNode.classList.remove('modal-error');
-  }
-});
+if(closeButtonLink){
+  closeButtonLink.addEventListener('click', function (evt) {
+    closeLink = evt.target;
+    if (closeLink.parentNode.classList.contains('modal-show')) {
+      closeLink.parentNode.classList.remove('modal-show');
+      overlay.classList.remove('modal-show');
+      document.body.classList.remove('stop-scrolling');
+    }
+    if (closeLink.parentNode.classList.contains('modal-error')) {
+      closeLink.parentNode.classList.remove('modal-error');
+    }
+  });
+}
 
 // закрытие модального окна по esc
 window.addEventListener('keydown', function (evt) {
@@ -96,14 +98,16 @@ window.addEventListener('keydown', function (evt) {
 });
 
 // закрытие модального окна по клику на overlay
-overlay.addEventListener('click', function () {
-  if (messageForm.classList.contains('modal-show')) {
-    messageForm.classList.remove('modal-show');
-    messageForm.classList.remove('modal-error');
-    overlay.classList.remove('modal-show');
-    document.body.classList.remove('stop-scrolling');
-  }
-});
+if(overlay){
+  overlay.addEventListener('click', function () {
+    if (messageForm.classList.contains('modal-show')) {
+      messageForm.classList.remove('modal-show');
+      messageForm.classList.remove('modal-error');
+      overlay.classList.remove('modal-show');
+      document.body.classList.remove('stop-scrolling');
+    }
+  });
+}
 
 // валидация формы номера телефона
 for (var i = 0; i < phoneInputList.length; i++) {
