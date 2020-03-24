@@ -49,19 +49,16 @@ if (messageLink) {
       messageForm.classList.add('modal-error');
       if (!userName.value) {
         userName.focus();
-      } else {
-        if (!userPhone.value) {
-          userPhone.focus();
-        } else {
-          if (messageContent.value === '') {
-            messageContent.focus();
-          }
-        }
+      } else if (!userPhone.value) {
+        userPhone.focus();
+      } else if (messageContent.value === '') {
+        messageContent.focus();
       }
     } else {
       if (isStorageSupport) {
         localStorage.setItem('userName', userName.value);
         localStorage.setItem('userPhone', userPhone.value);
+        localStorage.setItem('messageContent', messageContent.value);
       }
     }
   });
