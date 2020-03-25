@@ -115,7 +115,7 @@
             <span>Мы проконсультируем Вас бесплатно</span>
             <div class="form__row">
               <input type="text" name="name" id="name" placeholder="Имя" value="" aria-label="Введите ваше имя" required>
-              <input class="phone" type="text" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона" value="" required>
+              <input class="phone" type="text" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона" value="" minlength="17" maxlength="17" required>
             </div>
             <textarea id="content" rows="5" placeholder="Ваш вопрос" aria-label="Введите текст вопроса" form="form" required></textarea>
             <div class="form__row">
@@ -213,7 +213,7 @@
           <legend>Закажите звонок</legend>
           <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
           <input type="text" name="name" id="name-modal" placeholder="Имя" value="" required>
-          <input class="phone" type="text" name="phone" id="phone-modal" placeholder="Телефон" value="" maxlength="17" required>
+          <input class="phone" type="text" name="phone" id="phone-modal" placeholder="Телефон" value="" minlength="17" maxlength="17" required>
           <textarea id="content-modal" rows="5" placeholder="Ваш вопрос" form="form-modal" required></textarea>
           <button type="submit">Отправить</button>
           <input class="visually-hidden" type="checkbox" name="modal-agr" id="modal-agr" value="agree" required>
